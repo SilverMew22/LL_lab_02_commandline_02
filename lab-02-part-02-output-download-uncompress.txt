@@ -112,7 +112,12 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 Write the command you used below.  Also copy and paste the output below.
 ----------
 
-curl -o google.html http://google.com
+curl -o google.html www.google.com
+
+
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 12647    0 12647    0     0   122k      0 --:--:-- --:--:-- --:--:--  123k
 
 ==========
 11. Now let's download the lab file for this homework.  First, figure out what directory you're in.
@@ -120,8 +125,8 @@ curl -o google.html http://google.com
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
 
-~
--bash: /Users/student: is a directory
+pwd
+/Users/student
 
 ==========
 12. If you're not in your home directory, change to it (use the shortcut).
@@ -129,7 +134,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
 
-cd /Users/student
+cd ~
 
 ==========
 13. So... the lab materials are located at this url:
@@ -163,6 +168,7 @@ unzip mtec1002-lab-02.zip
 
 Copy and paste the output below.
 ----------
+cd mtec1002-lab-02
 
 books	logs	web
 
@@ -174,7 +180,15 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-/Users/student/stuff
+AMALogger20190109.log	Documents		Things			ipe.properties
+AMALogger20190308.log	Downloads		__MACOSX		isus
+AMALogger20190905.log	Library			animals			mtec1002-lab-02
+AMALogger20190909.log	MPLABXProjects		cats			mtec1002-lab-02.zip
+Adlm			Movies			cats3			pymel.log
+Adobe			Music			foo			stuff
+Applications		Pictures		food			stuff.tar
+Creative Cloud Files	Public			google.html		xgen
+Desktop			QLData			hello.txt
 
 
 ==========
@@ -186,7 +200,8 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
+cd stuff
+echo "hi" > hello.txt
 A text file saying hello appearing in the /Users/student directory
 
 ==========
@@ -199,7 +214,7 @@ List the files in the directory you're currently in (which should be home).
 Copy and paste the output below.
 ----------
 
-a stuff
+stuff.tar
 
 ==========
 19. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
@@ -257,7 +272,7 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-books		logs		stuff.tar.gz	web
+books		logs		stuff.tar.gz	  web
 
 ==========
 23. You should be in the lab directory.  Let's uncompress the file.
@@ -266,7 +281,7 @@ $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-books		logs		stuff		stuff.tar.gz	web
+books		logs		stuff		stuff.tar.gz	  web
 
 
 
